@@ -1,0 +1,99 @@
+@media only screen and (max-width: 1200px) {
+  main {
+    max-width: 100rem;
+  }
+
+  header {
+    max-width: 100rem;
+  }
+  .main-nav ul li a {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    padding: 2rem;
+  }
+  .aside {
+    display: none;
+  }
+
+  main {
+    &::after {
+      display: none;
+    }
+  }
+  .biden {
+    grid-column: 1 / 21;
+  }
+
+  .donors {
+    grid-column: 1 / 21;
+  }
+  .bronze-star {
+    grid-column: 1 / 21;
+  }
+  .Biden’s-Senate {
+    grid-column: 1 / 21;
+  }
+
+  .upper-nav {
+    display: none;
+  }
+
+  .middle-nav .fa-user {
+    display: block;
+    font-size: 2rem;
+    text-align: right;
+  }
+
+  .middle-nav .fa-bars {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .middle-nav a {
+    display: none;
+  }
+  .middle-nav .logo {
+    width: 28rem;
+  }
+  header {
+    height: auto;
+    padding: 2rem;
+  }
+
+  figcaption {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .biden {
+    flex-direction: column;
+  }
+
+  .donors {
+    flex-direction: column;
+  }
+  .bronze-star {
+    flex-direction: column;
+  }
+  .Biden’s-Senate {
+    flex-direction: column;
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+  .bronze-star article:nth-child(2) {
+    figcaption {
+      text-align: left;
+    }
+  }
+}
