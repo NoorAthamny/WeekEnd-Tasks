@@ -1,0 +1,45 @@
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .aside {
+    grid-column: 1 / 11;
+    grid-row: auto;
+    padding: 2rem;
+  }
+
+  .text__ {
+    grid-column: 1 / 11;
+    grid-row: auto;
+    padding: 2rem;
+  }
+
+  .product__ {
+    grid-column: 1 / 11;
+    grid-row: auto;
+    padding: 2rem;
+  }
+
+  .left-nav .location,
+  .top-bar .middle-nav,
+  .top-bar .right-nav {
+    display: none;
+  }
+
+  .pro-options {
+    flex-direction: column;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+}
+
+.fa-bars {
+  display: block;
+}
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
