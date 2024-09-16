@@ -117,3 +117,22 @@ console.log(basicOp("/", 10, 5));
 console.log(basicOp("=", 4, 7));
 
 // math in story
+
+// 3.1  Growth Of population
+
+function population(p0, percent, inhabitants, p) {
+  let years = 0;
+  while (p0 < p) {
+    p0 += p0 * (percent / 100) + inhabitants;
+    years++;
+  }
+  return years;
+}
+
+console.log(population(1000, 2, 50, 1200));
+
+// not working " weird" .....................
+
+// 3.2 People on the Bus
+
+// sorry i didnt finish it all
