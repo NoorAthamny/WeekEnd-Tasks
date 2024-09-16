@@ -56,3 +56,64 @@ function findNextSquare(num) {
 // let num = 121;
 let nextSquare = findNextSquare(12);
 console.log(nextSquare);
+
+// 2.4 Unique
+//using indexof and lastindexof , we can check it the element is wroten more than once, (ckeck there is the first index and the last of that element. )
+function findUniq(arr) {
+  for (let num of arr) {
+    if (arr.indexOf(num) === arr.lastIndexOf(num)) {
+      return num;
+    }
+  }
+}
+// (if the index of the start and the end is === there is only one. if not there is more that one cuz the indexs is not ===. )
+
+console.log(findUniq([1, 1, 1, 2, 1, 1]));
+console.log(findUniq([0, 0, 0.55, 0, 0]));
+
+// 2.5 Summation
+
+function summation(num) {
+  let = sum = 0;
+  let = arr = [];
+  for (let i = 1; i <= num; i++) {
+    sum += i;
+    arr.push(i);
+  }
+  return sum;
+}
+console.log(summation(8));
+console.log(arr);
+
+// 2.6 Years and Centuries
+
+function basicOp(op, num1, num2) {
+  // make a condition that in case its op(+ - / *) do the math else its an error
+  switch (op) {
+    case "+":
+      return num1 + num2;
+      break;
+
+    case "-":
+      return num1 - num2;
+      break;
+
+    case "*":
+      return num1 * num2;
+      break;
+
+    case "/":
+      return num1 / num2;
+      break;
+    default:
+      console.log("Invalid Operation");
+  }
+}
+
+console.log(basicOp("+", 4, 7));
+console.log(basicOp("-", 10, 7));
+console.log(basicOp("*", 2, 2));
+console.log(basicOp("/", 10, 5));
+console.log(basicOp("=", 4, 7));
+
+// math in story
